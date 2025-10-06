@@ -48,7 +48,7 @@
                   }
                 ],
                 "minecraft:damage": {
-                  "durability": 1
+                  "durability": 2
                 }
               }
             }
