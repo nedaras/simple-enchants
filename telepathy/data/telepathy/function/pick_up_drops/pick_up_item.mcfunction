@@ -1,7 +1,7 @@
 data modify storage telepathy:temp item set from entity @s Item
 execute unless data storage telepathy:temp item.components run data modify storage telepathy:temp item.components set value "{}"
 
-tellraw @a {"nbt": "item.components", "storage": "telepathy:temp"}
+#tellraw @a {"nbt": "item.components", "storage": "telepathy:temp"}
 
 execute as @a[tag=telepathy.executor,sort=nearest,limit=1] run function telepathy:pick_up_drops/__add_to_inventory with storage telepathy:temp item
 

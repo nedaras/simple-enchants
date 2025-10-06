@@ -1,6 +1,7 @@
 tag @s remove telepathy.pick_up_drops
 
 # need to return durability if unbreaking is active
+execute if predicate telepathy:needs_a_refund run function telepathy:refund_durability
 
 execute store result storage telepathy:vars block_pos[0] int 1.0 run scoreboard players get @s telepathy.block_pos.x
 execute store result storage telepathy:vars block_pos[1] int 1.0 run scoreboard players get @s telepathy.block_pos.y
