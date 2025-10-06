@@ -12,6 +12,62 @@
           "function": "telepathy:hit_block"
         }
       }
+    ],
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:unbreaking",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 1
+        }
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:unbreaking",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:damage": {
+                  "durability": 2
+                }
+              }
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": 1
+        }
+      }
     ]
   },
   "max_cost": {

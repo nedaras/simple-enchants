@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": [
+                "basicenchants.telepathy",
+                "minecraft:unbreaking"
+              ],
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
