@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "basicenchants:telepathy",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "telepathy:hurt"
+  }
+}
