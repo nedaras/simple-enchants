@@ -11,6 +11,11 @@ execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraf
 # as an item it will need to loop @a to get back to player, not so optimal
 
 data modify entity "a3d1db21-6c77-e579-0000-000000000000" Pos set from storage telepathy:vars block_pos
-execute at "a3d1db21-6c77-e579-0000-000000000000" positioned ~0.5 ~0.5 ~0.5 as @e[type=minecraft:item,sort=nearest,distance=..1.5,nbt={Age:0s,PickupDelay:0s}] run say pick me up
+
+# there has to be another way
+tag @s add telepathy.executor
+# todo: make distance as small as possible
+execute at "a3d1db21-6c77-e579-0000-000000000000" positioned ~0.5 ~0.5 ~0.5 as @e[type=minecraft:item,sort=nearest,distance=..1.5,nbt={Age:0s,PickupDelay:10s}] run function telepathy:pick_up_drops/pick_up_item
+tag @s remove telepathy.executor
 
 #particle minecraft:crit ~ ~ ~ 0.1875 0.1875 0.1875 0 50 force
