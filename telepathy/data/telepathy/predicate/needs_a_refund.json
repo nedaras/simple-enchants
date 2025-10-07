@@ -7,15 +7,23 @@
         "predicates": {
           "minecraft:enchantments": [
             {
-              "enchantments": [
-                "basicenchants:telepathy",
-                "minecraft:unbreaking"
-              ],
+              "enchantments": "basicenchants:telepathy",
+              "levels": {
+                "min": 1
+              }
+            },
+            {
+              "enchantments": "minecraft:unbreaking",
               "levels": {
                 "min": 1
               }
             }
-          ]
+          ],
+          "minecraft:damage": {
+            "durability": {
+              "min": 3
+            }
+          }
         }
       }
     }

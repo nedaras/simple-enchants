@@ -14,8 +14,12 @@
 advancement revoke @s only telepathy:mine
 execute unless score @s telepathy.block_pos.y matches -64.. run return fail
 
+# R1 means schedule, R2 means pick_up_drops
+scoreboard players set @s telepathy.R1 1
+scoreboard players set @s telepathy.R2 1
+
 # is taging as fast as scores?
-tag @s add telepathy.pick_up_drops
+#tag @s add telepathy.pick_up_drops
 
 # drops are generated later in tick, so we need to schedule
-schedule function telepathy:pick_up_drops 1t
+#schedule function telepathy:pick_up_drops 1tdd
