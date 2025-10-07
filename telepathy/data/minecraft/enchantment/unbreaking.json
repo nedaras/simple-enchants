@@ -1,75 +1,95 @@
 {
-  "anvil_cost": 8,
+  "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.basicenchants.telepathy",
-    "fallback": "Telepathy"
+    "translate": "enchantment.minecraft.unbreaking"
   },
   "effects": {
-    "minecraft:hit_block": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "telepathy:hit_block"
-        }
-      }
-    ],
     "minecraft:item_damage": [
       {
-        "requirements": {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:enchantments": [
-                {
-                  "enchantments": "minecraft:unbreaking",
-                  "levels": {
-                    "min": 1
-                  }
-                }
-              ]
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 10,
+              "per_level_above_first": 5
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 2,
+              "per_level_above_first": 2
             }
           }
         },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor"
+          }
+        }
+      },
+      {
         "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:remove_binomial",
-              "chance": {
-                "type": "minecraft:fraction",
-                "numerator": {
-                  "type": "minecraft:linear",
-                  "base": 1,
-                  "per_level_above_first": 1
-                },
-                "denominator": {
-                  "type": "minecraft:linear",
-                  "base": 2,
-                  "per_level_above_first": 1
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 2,
+              "per_level_above_first": 1
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 1
+            }
+          }
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": "#minecraft:enchantable/armor"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "basicenchants:telepathy",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
                 }
               }
-            },
-            {
-              "type": "minecraft:add",
-              "value": 1
             }
-          ]
-        }
+          }
+        ]
       }
     ]
   },
   "max_cost": {
-    "base": 65,
-    "per_level_above_first": 0
+    "base": 55,
+    "per_level_above_first": 8
   },
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
-    "base": 15,
-    "per_level_above_first": 0
+    "base": 5,
+    "per_level_above_first": 8
   },
   "slots": [
-    "mainhand"
+    "any"
   ],
-  "supported_items": "#minecraft:enchantable/mining_loot",
-  "weight": 1
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 5
 }

@@ -31,32 +31,29 @@
           }
         },
         "effect": {
-          "type": "minecraft:add",
-          "value": 1
-        }
-      },
-      {
-        "requirements": [
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "predicates": {
-                "minecraft:enchantments": [
-                  {
-                    "enchantments": "minecraft:unbreaking",
-                    "levels": 1
-                  }
-                ],
-                "minecraft:damage": {
-                  "durability": 2
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:remove_binomial",
+              "chance": {
+                "type": "minecraft:fraction",
+                "numerator": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                },
+                "denominator": {
+                  "type": "minecraft:linear",
+                  "base": 2,
+                  "per_level_above_first": 1
                 }
               }
+            },
+            {
+              "type": "minecraft:add",
+              "value": 1
             }
-          }
-        ],
-        "effect": {
-          "type": "minecraft:remove_binomial",
-          "chance": 1
+          ]
         }
       }
     ]
