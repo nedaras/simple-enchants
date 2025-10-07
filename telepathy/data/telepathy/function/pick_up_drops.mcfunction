@@ -6,6 +6,7 @@ execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraf
 data modify entity "a3d1db21-6c77-e579-0000-000000000000" Pos set from storage telepathy:vars block_pos
 
 # there has to be another way
+
 tag @s add telepathy.executor
 # todo: make distance as small as possible
 execute at "a3d1db21-6c77-e579-0000-000000000000" positioned ~0.5 ~0.5 ~0.5 as @e[type=minecraft:item,sort=nearest,distance=..1.5,nbt={Age:0s,PickupDelay:10s}] run function telepathy:pick_up_drops/pick_up_item
