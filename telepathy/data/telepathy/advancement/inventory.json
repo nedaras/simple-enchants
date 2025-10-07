@@ -8,7 +8,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "telepathy:R1": 1
+              "telepathy.R1": 1
             }
           }
         ]
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "telepathy:pick_up_drops"
+    "function": "telepathy:schedule"
   }
 }
