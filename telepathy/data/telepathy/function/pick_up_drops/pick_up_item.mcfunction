@@ -9,6 +9,6 @@ scoreboard players operation #telepathy.math telepathy.R1 -= #telepathy.math tel
 # add that item count to registry as we need it
 
 execute if score #telepathy.math telepathy.R1 matches 0 run return run kill @s
-execute if score #telepathy.math telepathy.R1 matches $count run return 1
+#execute if score #telepathy.math telepathy.R1 matches $count run return 1
 
 execute store result entity @s Item.count int 1.0 run scoreboard players get #telepathy.math telepathy.R1
