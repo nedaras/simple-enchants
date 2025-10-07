@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "inventory": {
+    "item_modify": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "telepathy:schedule"
+    "function": "telepathy:item_modify"
   }
 }
