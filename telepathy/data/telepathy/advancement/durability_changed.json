@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "mine": {
+    "durability_changed": {
       "trigger": "minecraft:item_durability_changed",
       "conditions": {
         "item": {
@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "telepathy:mine"
+    "function": "telepathy:trigger/durability_changed"
   }
 }

@@ -1,10 +1,12 @@
+# @sender 
+#   - minecraft/tags/function/load.json
+#
+# @description
+#   - initialize datapack 
+
 scoreboard objectives add telepathy.block_pos.x dummy
 scoreboard objectives add telepathy.block_pos.y dummy
 scoreboard objectives add telepathy.block_pos.z dummy
-
-scoreboard objectives add telepathy.block_pos_2.x dummy
-scoreboard objectives add telepathy.block_pos_2.y dummy
-scoreboard objectives add telepathy.block_pos_2.z dummy
 
 scoreboard objectives add telepathy.R1 dummy
 scoreboard objectives add telepathy.R2 dummy

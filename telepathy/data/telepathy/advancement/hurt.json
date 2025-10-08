@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "hurt": {
+    "hurt_entity": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "telepathy:hurt"
+    "function": "telepathy:trigger/hurt_entity"
   }
 }

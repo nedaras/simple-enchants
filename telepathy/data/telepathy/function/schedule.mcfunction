@@ -1,5 +1,11 @@
-# do summon check here
-execute as @a[scores={telepathy.R1=1}] run function telepathy:pick_up_drops
+# @sender 
+#   - telepathy/function/trigger/durability_changed.mcfunction
+#
+# @executor server
+# @location unset
+#
+# @description
+#   - prepare break trigger for every scheduled player 
 
-scoreboard players reset @s telepathy.R1
-scoreboard players reset @s telepathy.R2
+execute as @a[tag=telepathy.scheduling] at @s run function telepathy:prepare_break_trigger
+tag @a[tag=telepathy.scheduling] remove telepathy.scheduling
