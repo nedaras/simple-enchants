@@ -12,29 +12,6 @@
           "function": "telepathy:trigger/hit_block"
         }
       }
-    ],
-    "minecraft:item_damage": [
-      {
-        "requirements": {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:enchantments": [
-                {
-                  "enchantments": "minecraft:unbreaking",
-                  "levels": {
-                    "min": 1
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "effect": {
-          "type": "minecraft:add",
-          "value": -2
-        }
-      }
     ]
   },
   "max_cost": {

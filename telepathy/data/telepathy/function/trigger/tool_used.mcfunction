@@ -7,8 +7,11 @@
 # @description
 #   - schedule 1 tick as block drops will only be generated later in a tick
 
-advancement revoke @s only telepathy:durability_changed
+scoreboard players reset @s telepathy.d_pickaxe_uses
+
 execute unless score @s telepathy.block_pos.y matches -64.. run return fail
 
-tag @s add telepathy.scheduling
-schedule function telepathy:schedule 1t
+say tool used
+
+#tag @s add telepathy.scheduling
+#schedule function telepathy:schedule 1t
