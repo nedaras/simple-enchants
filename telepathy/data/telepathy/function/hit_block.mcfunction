@@ -10,3 +10,5 @@ tp "a3d1db21-6c77-e579-0000-000000000000" ~ ~ ~
 execute store result score @s telepathy.block_pos.x run data get entity "a3d1db21-6c77-e579-0000-000000000000" Pos[0]
 execute store result score @s telepathy.block_pos.y run data get entity "a3d1db21-6c77-e579-0000-000000000000" Pos[1]
 execute store result score @s telepathy.block_pos.z run data get entity "a3d1db21-6c77-e579-0000-000000000000" Pos[2]
+
+#should store this into idk hit block array

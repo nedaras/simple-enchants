@@ -26,39 +26,13 @@
                     "min": 1
                   }
                 }
-              ],
-              "minecraft:damage": {
-                "durability": {
-                  "min": 3
-                }
-              }
+              ]
             }
           }
         },
         "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:remove_binomial",
-              "chance": {
-                "type": "minecraft:fraction",
-                "numerator": {
-                  "type": "minecraft:linear",
-                  "base": 1,
-                  "per_level_above_first": 1
-                },
-                "denominator": {
-                  "type": "minecraft:linear",
-                  "base": 2,
-                  "per_level_above_first": 1
-                }
-              }
-            },
-            {
-              "type": "minecraft:add",
-              "value": 1
-            }
-          ]
+          "type": "minecraft:add",
+          "value": -2
         }
       }
     ]

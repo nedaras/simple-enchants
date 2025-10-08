@@ -22,4 +22,4 @@ scoreboard players set @s telepathy.R2 1
 #tag @s add telepathy.pick_up_drops
 
 # drops are generated later in tick, so we need to schedule
-#schedule function telepathy:pick_up_drops 1tdd
+schedule function telepathy:schedule 1t

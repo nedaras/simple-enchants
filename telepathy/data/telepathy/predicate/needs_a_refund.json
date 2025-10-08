@@ -18,12 +18,7 @@
                 "min": 1
               }
             }
-          ],
-          "minecraft:damage": {
-            "durability": {
-              "min": 3
-            }
-          }
+          ]
         }
       }
     }

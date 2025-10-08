@@ -1,7 +1,7 @@
 {
   "criteria": {
     "item_modify": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:impossible",
       "conditions": {
         "player": [
           {
