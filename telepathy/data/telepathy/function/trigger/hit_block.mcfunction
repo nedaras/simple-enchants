@@ -5,7 +5,10 @@
 # @location hitted block
 #
 # @description
+#   - processes pending block if any
 #   - save block's position to player's score
+
+execute if entity @s[tag=telepathy.scheduling] run function telepathy:prepare_break_trigger
 
 execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraft:marker ~ ~ ~ {UUID:[I;-1546527967,1819796857,0,0]}
 tp "a3d1db21-6c77-e579-0000-000000000000" ~ ~ ~

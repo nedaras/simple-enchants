@@ -8,6 +8,8 @@
 # @description
 #   - execute break trigger at block's position
 
+tag @s remove telepathy.scheduling
+
 # todo: check if we can just set markers position from score directly
 execute store result storage telepathy:vars block_pos[0] int 1.0 run scoreboard players get @s telepathy.block_pos.x
 execute store result storage telepathy:vars block_pos[1] int 1.0 run scoreboard players get @s telepathy.block_pos.y

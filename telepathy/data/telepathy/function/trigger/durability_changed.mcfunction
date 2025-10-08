@@ -5,13 +5,9 @@
 # @location player
 #
 # @description
-#   - process current block in a next tick
-#   - process previous block if needed
+#   - schedule 1 tick as block drops will only be generated later in a tick
 
 advancement revoke @s only telepathy:durability_changed
 execute unless score @s telepathy.block_pos.y matches -64.. run return fail
 
 schedule function telepathy:schedule 1t
-
-execute unless entity @s[tag=telepathy.scheduling] run return run tag @s add telepathy.scheduling
-function telepathy:prepare_break_trigger
