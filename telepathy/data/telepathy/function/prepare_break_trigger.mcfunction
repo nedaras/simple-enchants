@@ -6,9 +6,11 @@
 # @location player
 #
 # @description
+#   - restores item's durability if needed
 #   - execute break trigger at block's position
 
 tag @s remove telepathy.scheduling
+execute if predicate telepathy:needs_restoration run function telepathy:restore_durability
 
 # todo: check if we can just set markers position from score directly
 execute store result storage telepathy:vars block_pos[0] int 1.0 run scoreboard players get @s telepathy.block_pos.x
@@ -17,7 +19,5 @@ execute store result storage telepathy:vars block_pos[2] int 1.0 run scoreboard 
 
 execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraft:marker ~ ~ ~ {UUID:[I;-1546527967,1819796857,0,0]}
 data modify entity "a3d1db21-6c77-e579-0000-000000000000" Pos set from storage telepathy:vars block_pos
-
-# todo: fix durability
 
 execute at "a3d1db21-6c77-e579-0000-000000000000" positioned ~0.5 ~0.5 ~0.5 run function telepathy:trigger/break

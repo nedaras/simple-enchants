@@ -10,4 +10,5 @@
 advancement revoke @s only telepathy:durability_changed
 execute unless score @s telepathy.block_pos.y matches -64.. run return fail
 
+tag @s add telepathy.scheduling
 schedule function telepathy:schedule 1t
