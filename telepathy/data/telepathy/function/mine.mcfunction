@@ -18,6 +18,10 @@ execute unless score @s telepathy.block_pos.y matches -64.. run return fail
 scoreboard players set @s telepathy.R1 1
 scoreboard players set @s telepathy.R2 1
 
+execute store result score telepathy.block_pos_2.x run scoreboard players get @s telepathy.block_pos_2.x
+execute store result score telepathy.block_pos_2.y run scoreboard players get @s telepathy.block_pos_2.y
+execute store result score telepathy.block_pos_2.z run scoreboard players get @s telepathy.block_pos_2.z
+
 # is taging as fast as scores?
 #tag @s add telepathy.pick_up_drops
 
