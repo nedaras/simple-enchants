@@ -11,7 +11,13 @@
 # and then inside tick we can like check if like player left hited block
 # most optimal would be a check that would run till player is looking at the block
 
+scoreboard players reset @s telepathy.w_pickaxe_uses
+scoreboard players reset @s telepathy.s_pickaxe_uses
+scoreboard players reset @s telepathy.c_pickaxe_uses
+scoreboard players reset @s telepathy.i_pickaxe_uses
+scoreboard players reset @s telepathy.g_pickaxe_uses
 scoreboard players reset @s telepathy.d_pickaxe_uses
+scoreboard players reset @s telepathy.n_pickaxe_uses
 
 execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraft:marker ~ ~ ~ {UUID:[I;-1546527967,1819796857,0,0]}
 tp "a3d1db21-6c77-e579-0000-000000000000" ~ ~ ~

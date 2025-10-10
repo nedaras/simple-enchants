@@ -2,7 +2,25 @@
   "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
+    "telepathy.w_pickaxe_uses": {
+      "min": 1
+    },
+    "telepathy.s_pickaxe_uses": {
+      "min": 1
+    },
+    "telepathy.c_pickaxe_uses": {
+      "min": 1
+    },
+    "telepathy.i_pickaxe_uses": {
+      "min": 1
+    },
+    "telepathy.g_pickaxe_uses": {
+      "min": 1
+    },
     "telepathy.d_pickaxe_uses": {
+      "min": 1
+    },
+    "telepathy.n_pickaxe_uses": {
       "min": 1
     }
   }

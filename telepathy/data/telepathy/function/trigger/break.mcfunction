@@ -7,4 +7,4 @@
 # @description
 #   - pick up items at broken block
 
-setblock ~ ~ ~ stone
+kill @e[type=item,sort=nearest,distance=..0.5,nbt={Age:0s,PickupDelay:10s}]
