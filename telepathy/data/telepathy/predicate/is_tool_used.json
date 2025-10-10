@@ -1,27 +1,68 @@
 {
-  "condition": "minecraft:entity_scores",
-  "entity": "this",
-  "scores": {
-    "telepathy.w_pickaxe_uses": {
-      "min": 1
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.w_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.s_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.s_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.c_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.c_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.i_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.i_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.g_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.g_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.d_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.d_pickaxe_uses": {
+          "min": 1
+        }
+      }
     },
-    "telepathy.n_pickaxe_uses": {
-      "min": 1
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.n_pickaxe_uses": {
+          "min": 1
+        }
+      }
     }
-  }
+  ]
 }
