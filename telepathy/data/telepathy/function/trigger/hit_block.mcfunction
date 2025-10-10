@@ -5,14 +5,11 @@
 # @location hitted block
 #
 # @description
-#   - processes pending block if any
 #   - save block's position to player's score
 
 # have an idea to make tick advancement that would be revoked when block is hited
 # and then inside tick we can like check if like player left hited block
 # most optimal would be a check that would run till player is looking at the block
-
-#execute if entity @s[tag=telepathy.scheduling] run function telepathy:prepare_break_trigger
 
 scoreboard players reset @s telepathy.d_pickaxe_uses
 

@@ -1,5 +1,5 @@
 # @sender 
-#   - telepathy/function/prepare_break_trigger.mcfunction
+#   - telepathy/function/trigger/player_tick.mcfunction
 #
 # @executor player
 # @location broken block

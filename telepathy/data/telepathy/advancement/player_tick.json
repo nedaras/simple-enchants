@@ -1,12 +1,12 @@
 {
   "criteria": {
     "tick": {
-      "trigger": "minecraft:player_tick"
+      "trigger": "minecraft:tick"
     }
   },
   "requirements": [
     [
-      "player_tick"
+      "tick"
     ]
   ],
   "rewards": {
