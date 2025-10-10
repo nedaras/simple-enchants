@@ -1,11 +1,13 @@
 # @sender 
-#   - telepathy/advancement/durability_changed.json
+#   - basicenchants/enchantment/telepathy.json
 #
 # @executor player
 # @location player
 #
 # @description
 #   - schedule 1 tick as block drops will only be generated later in a tick
+
+# drops are already generated
 
 scoreboard players reset @s telepathy.d_pickaxe_uses
 

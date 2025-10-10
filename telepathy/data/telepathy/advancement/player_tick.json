@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:player_tick"
+    }
+  },
+  "requirements": [
+    [
+      "player_tick"
+    ]
+  ],
+  "rewards": {
+    "function": "telepathy:trigger/player_tick"
+  }
+}
