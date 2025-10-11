@@ -68,6 +68,51 @@
       "condition": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
+        "telepathy.w_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.s_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.c_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.i_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "telepathy.g_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
         "telepathy.d_shovel_uses": {
           "min": 1
         }

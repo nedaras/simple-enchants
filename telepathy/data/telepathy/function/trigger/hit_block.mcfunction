@@ -15,6 +15,11 @@ scoreboard players reset @s telepathy.g_pickaxe_uses
 scoreboard players reset @s telepathy.d_pickaxe_uses
 scoreboard players reset @s telepathy.n_pickaxe_uses
 
+scoreboard players reset @s telepathy.w_shovel_uses
+scoreboard players reset @s telepathy.s_shovel_uses
+scoreboard players reset @s telepathy.c_shovel_uses
+scoreboard players reset @s telepathy.i_shovel_uses
+scoreboard players reset @s telepathy.g_shovel_uses
 scoreboard players reset @s telepathy.d_shovel_uses
 scoreboard players reset @s telepathy.n_shovel_uses
 
