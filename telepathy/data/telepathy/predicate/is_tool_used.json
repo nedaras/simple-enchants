@@ -68,6 +68,15 @@
       "condition": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
+        "telepathy.d_shovel_uses": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
         "telepathy.n_shovel_uses": {
           "min": 1
         }

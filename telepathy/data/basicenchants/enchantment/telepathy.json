@@ -7,9 +7,33 @@
   "effects": {
     "minecraft:hit_block": [
       {
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:diamond_pickaxe",
+              "minecraft:diamond_shovel"
+            ]
+          }
+        },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "telepathy:trigger/hit_block"
+          "function": "telepathy:trigger/hit_block/diamond_tools"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:netherite_pickaxe",
+              "minecraft:netherite_shovel"
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "telepathy:trigger/hit_block/netherite_tools"
         }
       }
     ]
