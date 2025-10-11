@@ -7,43 +7,9 @@
   "effects": {
     "minecraft:hit_block": [
       {
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "mainhand": {
-                "items": [
-                  "minecraft:diamond_pickaxe",
-                  "minecraft:diamond_shovel"
-                ]
-              }
-            }
-          }
-        },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "telepathy:trigger/hit_block/diamond_tools"
-        }
-      },
-      {
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "mainhand": {
-                "items": [
-                  "minecraft:netherite_pickaxe",
-                  "minecraft:netherite_shovel"
-                ]
-              }
-            }
-          }
-        },
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "telepathy:trigger/hit_block/netherite_tools"
+          "function": "telepathy:trigger/hit_block"
         }
       }
     ]
