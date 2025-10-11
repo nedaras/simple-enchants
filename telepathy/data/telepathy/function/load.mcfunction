@@ -22,4 +22,6 @@ scoreboard objectives add telepathy.g_pickaxe_uses used:golden_pickaxe
 scoreboard objectives add telepathy.d_pickaxe_uses used:diamond_pickaxe
 scoreboard objectives add telepathy.n_pickaxe_uses used:netherite_pickaxe
 
+scoreboard objectives add telepathy.n_shovel_uses used:netherite_shovel
+
 data modify storage telepathy:vars block_pos set value [0,0,0]
