@@ -8,12 +8,17 @@
     "minecraft:hit_block": [
       {
         "requirements": {
-          "condition": "minecraft:match_tool",
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
           "predicate": {
-            "items": [
-              "minecraft:diamond_pickaxe",
-              "minecraft:diamond_shovel"
-            ]
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:diamond_pickaxe",
+                  "minecraft:diamond_shovel"
+                ]
+              }
+            }
           }
         },
         "effect": {
@@ -23,12 +28,17 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:match_tool",
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
           "predicate": {
-            "items": [
-              "minecraft:netherite_pickaxe",
-              "minecraft:netherite_shovel"
-            ]
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:netherite_pickaxe",
+                  "minecraft:netherite_shovel"
+                ]
+              }
+            }
           }
         },
         "effect": {
