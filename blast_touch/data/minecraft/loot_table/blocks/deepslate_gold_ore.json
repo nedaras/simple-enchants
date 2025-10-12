@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:loot_table",
-              "value": "blast_touch:iron",
+              "value": "blast_touch:gold",
               "conditions": [
                 {
                   "condition": "minecraft:reference",
@@ -36,7 +36,7 @@
                   }
                 }
               ],
-              "name": "minecraft:iron_ore"
+              "name": "minecraft:deepslate_gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -50,7 +50,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_iron"
+              "name": "minecraft:raw_gold"
             }
           ]
         }
@@ -58,5 +58,5 @@
       "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:blocks/iron_ore"
+  "random_sequence": "minecraft:blocks/deepslate_gold_ore"
 }
