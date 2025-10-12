@@ -24,7 +24,7 @@ scoreboard objectives add telepathy.n_pickaxe_uses used:netherite_pickaxe
 
 scoreboard objectives add telepathy.w_shovel_uses used:wooden_shovel
 scoreboard objectives add telepathy.s_shovel_uses used:stone_shovel
-scoreboard objectives add telepathy.c_shovel_uses used:cooper_shovel
+scoreboard objectives add telepathy.c_shovel_uses used:copper_shovel
 scoreboard objectives add telepathy.i_shovel_uses used:iron_shovel
 scoreboard objectives add telepathy.g_shovel_uses used:golden_shovel
 scoreboard objectives add telepathy.d_shovel_uses used:diamond_shovel

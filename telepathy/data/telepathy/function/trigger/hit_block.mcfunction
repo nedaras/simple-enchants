@@ -23,6 +23,8 @@ scoreboard players reset @s telepathy.g_shovel_uses
 scoreboard players reset @s telepathy.d_shovel_uses
 scoreboard players reset @s telepathy.n_shovel_uses
 
+# there is a bug that we on first hit this stuff is true
+# if block_pos.y is set and player does not have player_tick advancement
 execute if score @s telepathy.block_pos.y matches -64.. unless entity @s[advancements={telepathy:player_tick=true}] run function telepathy:prepare_break_trigger
 
 execute unless entity "a3d1db21-6c77-e579-0000-000000000000" run summon minecraft:marker ~ ~ ~ {UUID:[I;-1546527967,1819796857,0,0]}
