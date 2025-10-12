@@ -9,24 +9,13 @@
           "children": [
             {
               "type": "minecraft:loot_table",
+              "value": "blast_touch:blocks/iron_ore",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "basicenchants:blasting_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "blast_touch:is_enchanted"
                 }
-              ],
-              "value": "blasting_touch:blocks/iron_ore"
+              ]
             },
             {
               "type": "minecraft:item",
