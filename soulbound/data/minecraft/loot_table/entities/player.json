@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "soulbound:entities/player"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/player"
+}
