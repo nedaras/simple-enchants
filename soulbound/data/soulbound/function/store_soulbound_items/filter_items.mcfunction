@@ -11,6 +11,6 @@
 # need to bench mark if storage nbt is faster then items nbt
 
 data modify storage soulbound:temp inventory set from entity @s Item.components."minecraft:custom_data".soulbound.inventory
-execute if data storage soulbound:temp inventory[-1] run function function soulbound:store_soulbound_items/filter_item
+function soulbound:store_soulbound_items/iterate_items
 
 kill @s
