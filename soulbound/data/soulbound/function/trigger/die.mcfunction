@@ -16,6 +16,8 @@ data modify storage soulbound:temp uuid.y set from entity @s UUID[1]
 data modify storage soulbound:temp uuid.z set from entity @s UUID[2]
 data modify storage soulbound:temp uuid.w set from entity @s UUID[3]
 
+data remove storage soulbound:temp inventory
+
 function soulbound:__restore_inventory with storage soulbound:temp uuid
 function soulbound:filter_inventory
 
