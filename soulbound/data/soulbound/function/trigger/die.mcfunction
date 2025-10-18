@@ -19,6 +19,9 @@ data modify storage soulbound:temp uuid.w set from entity @s UUID[3]
 function soulbound:__restore_inventory with storage soulbound:temp uuid
 function soulbound:filter_inventory
 
+# need to handle not only containers, but like armor slots and all
+function soulbound:__store_inventory with storage soulbound:temp uuid
+
 #function soulbound:store_soulbound_items
 
 #execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ run function soulbound:__find_filter_item with storage soulbound:temp uuid
