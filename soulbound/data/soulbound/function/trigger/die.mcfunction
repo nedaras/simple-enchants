@@ -24,6 +24,7 @@ function soulbound:filter_inventory
 # need to handle not only containers, but like armor slots and all
 function soulbound:__store_inventory with storage soulbound:temp uuid
 
-#function soulbound:store_soulbound_items
+function soulbound:pick_up_filtered_items
+
 
 #execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ run function soulbound:__find_filter_item with storage soulbound:temp uuid
